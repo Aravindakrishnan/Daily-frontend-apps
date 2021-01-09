@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar{
+    width: 6rem;
+    /* background: #313131; */
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    height: 120vh; 
+}
+
+.navbar-navs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-navs .nav-item{
+    list-style-type: none;
+    font-size: 34px;
+    margin-top: 1.8em;
+}
+
+.nav-item .nav-link{
+    color: #f1f1f1;
+    transition: 0.2s;
+}
+
+.nav-link:hover{
+    border-bottom: 4px solid #f1f1f1;
+    transform: scale(1.1);
+}
+
+main{
+    margin-left: 6.4rem;
+    position: absolute;
+    top: 12px;
+}
+
+.card{
+    margin: 12px;
+    padding: 22px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+}
+.card p{
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.card a{
+    display: inline-block;
+    margin-top: 22px;
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:8px;
+    color: #f1f1f1;
+    transition: 0.1s;
+}
+
+.card a:active{
+    transform: scale(1.1);
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@media Screen and (max-width:600px){
+    .navbar{
+        width:100%;
+        height: 4rem;
+    }
+    .navbar-navs{
+        flex-direction: row;
+    }
+    .navbar-navs .nav-item{
+        margin-left: 16px;
+        margin-top: 0.4em;
+
+    }
+    main{
+        margin-left: 0rem;
+        position: relative;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
