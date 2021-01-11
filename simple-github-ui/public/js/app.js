@@ -1,18 +1,9 @@
 const inputElem = document.querySelector("nav ul li input");
-const topfetch = document.getElementById("top-fetch");
-const bottomfetch = document.getElementById("bottom-fetch");
 async function getGithubUserDetails(username){
     const res = await fetch(`https://api.github.com/users/${username}`);
     const data = await res.json();
     return data;
 }
-
-async function getGithubUserReposDetails(username){
-    const res = await fetch(`https://api.github.com/users/${username}/repos`);
-    const data = await res.json();
-    return data;
-}
-
 const requestButton = document.getElementById("request-button");
 requestButton.addEventListener("click",()=>{
     const username = document.getElementById("username");
