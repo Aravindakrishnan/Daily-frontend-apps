@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+}
+body{
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292a2a, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #242627, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+nav{
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    margin-left: 1.2em;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f1f1f1;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    opacity: 0.4;
+}
+
+nav ul li input{
+    padding: 10px;
+    outline: none;
+}
+
+
+.img-fit{
+    width: 43px;
+    height: 43px;
+}
+
+img{
+    margin: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+ main input{
+     padding: 14px;
+     outline: none;
+     border: none;
+ }
+ main button{
+     padding: 14px;
+     background: #4e54c8;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #8f94fb, #4e54c8);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    outline: none;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: 0.1s;
+ }
+
+ main button:active{
+     transform: scale(0.9);
+ }
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5em;
+    color: #f1f1f1;
+}
+ .img-container{
+     width: 240px;
+     height: 240px;
+ }
+
+section .details{
+    margin-top: 12px; 
+}
+section .details > *{
+    margin-top: 4px;
+}
+
+.repo-details{
+    display:block;
+    margin-top: 1.3em;
+    border-radius: 8px;
+}
+
+.repo-details a{
+    display: inline-block;  
+    text-decoration: none;
+    color: #f1f1f1;
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 12px;
+    margin-left: 12px;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+ 
+.repo-details a:active{
+    transform: scale(1.1);
+}
+
+ 
+@media Screen and (max-width:800px){
+    nav > ul{
+        display: none;
+    }
+}
